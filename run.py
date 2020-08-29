@@ -10,11 +10,13 @@ class bcolors:
 
 print("")
 monthly = float(input("How much will you be adding monthly?: $"))
-interest = float(input("What's the monthly interest you're expecting (in %): "))
+interest = float(input("What's the monthly interest you're expecting (if 1%, input 0.01): "))
 years = int(input("How many years do you want to look at?: "))
+total = float(input("What's your starting amount of money?: "))
 print("")
 
 months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+
 for i in range((years * 12) - 12):
     months.append(months[i])
 
@@ -23,14 +25,12 @@ yearnum = []
 for i in range(years):
     for b in range(12):
         yearnum.append(i + 1)
-
-
 # start
 # interestprint
 # total
 
+#total = 0 #input initial amount. 0 if nothing.
 
-total = 0
 
 print("Year  \tMonth   \tInitial \tInterest \tTotal")
 print("-------------------------------------------------------------------")
